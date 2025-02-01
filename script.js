@@ -1,9 +1,13 @@
-const myObj = {
-    name: "John",
-    age: 25,
-    getKeys: function () {
-        return Object.keys(this);
-    }
+const student = {
+  name: "John"
 };
 
-console.log(myObj.getKeys());
+function getKeys(obj) {
+  return Object.keys(obj);
+}
+
+console.log(getKeys(student));
+
+// Do not change the code below this line
+window.student = student;
+window.getKeys = getKeys;
